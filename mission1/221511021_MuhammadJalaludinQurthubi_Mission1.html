@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>thisisjackii's first mission</title> 
+  <style>
+        body {
+            margin: 0px 20px;
+            padding: 0;
+            background-color: gray; /* to distinguish the outer border of the grid */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr); /* set fixed amount of the rows because Abu refused to span 2 rows */
+            outline: 2px solid white;
+        }
+
+        .grid-item {
+            display: flex;
+            border: 0.1px solid black;
+            background-color: white;
+            color: black;
+            padding: 8px;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        
+        .light-font {
+            color: white;
+        }
+
+        /* Cell colors */
+        .grid-item:nth-child(1) { background-color: #ffff00; }
+        .grid-item:nth-child(2) { background-color: #000000; }
+        .grid-item:nth-child(3) { background-color: #00af50; }
+        .grid-item:nth-child(4) { background-color: #833d0c; }
+        .grid-item:nth-child(5) { background-color: #ff66ff; }
+        .grid-item:nth-child(6) { background-color: #01b0f1; }
+        .grid-item:nth-child(7) { background-color: #fe0000; }
+        .grid-item:nth-child(8) { background-color: #ffffff; }
+        .grid-item:nth-child(9) { background-color: #7030a0; }
+        .grid-item:nth-child(10) { background-color: #0071c1; }
+        .grid-item:nth-child(11) { background-color: #a6a6a6; }
+        .grid-item:nth-child(12) { background-color: #ffc000; }
+    </style> 
+ </head> 
+ <body> 
+  <h1>thisisjackii's first mission</h1> 
+  <div class="grid-container"> 
+   <div class="grid-item kuning">
+     Kuning 
+   </div> 
+   <div class="grid-item light-font" style="grid-column: span 3;">
+     Hitam 
+   </div> 
+   <div class="grid-item">
+     Hijau 
+   </div> 
+   <div class="grid-item light-font">
+     Coklat 
+   </div> 
+   <div class="grid-item" style="grid-row: span 2;">
+     Pink 
+   </div> 
+   <div class="grid-item">
+     Biru 
+   </div> 
+   <div class="grid-item">
+     Merah 
+   </div> 
+   <div class="grid-item">
+     Putih 
+   </div> 
+   <div class="grid-item light-font" style="grid-row: span 4;">
+     Ungu 
+   </div> 
+   <div class="grid-item" style="grid-row: span 3;">
+     Biru Tua 
+   </div> 
+   <div class="grid-item" style="grid-column: span 2; grid-row: span 2;">
+     Abu 
+   </div> 
+   <div class="grid-item" style="grid-column: span 2;">
+     Oranye 
+   </div> 
+  </div> 
+ </body>
+</html>
